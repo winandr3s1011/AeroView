@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="logo.png" width="120" alt="AeroView Logo" />
-  <h1>AeroView</h1>
-  <p><strong>A modern media viewer inspired by Windows Vista / 7 Aero Glass</strong></p>
 
   ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-blue?logo=windows)
   ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen)
