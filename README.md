@@ -172,54 +172,6 @@ Video:   .mp4  .m4v  .webm  .ogg  .ogv  .mov  .avi  .mkv  .flv  .wmv  .3gp
 
 ---
 
-## 🛠️ Building from Source
-
-### Prerequisites
-- [Node.js](https://nodejs.org/) 18+
-- [npm](https://www.npmjs.com/) (comes with Node.js)
-- Windows 10/11 64-bit
-
-### Setup
-```bash
-git clone https://github.com/TUO-USERNAME/aeroview.git
-cd aeroview
-npm install
-```
-
-### Run in development mode
-```bash
-npx electron . --dev
-```
-
-### Build portable .exe
-```bash
-npx electron-packager . AeroView --platform=win32 --arch=x64 --overwrite --out=dist --icon=icon.ico
-```
-The output is in `dist\AeroView-win32-x64\AeroView.exe`
-
----
-
-## 📦 Creating an Installer with Inno Setup
-
-1. Download and install **[Inno Setup 6](https://jrsoftware.org/isinfo.php)**
-2. Build the app first (see above)
-3. Open `AeroView_Setup.iss` in Inno Setup Compiler
-4. Edit the `#define SourceDir` line to match your `dist\AeroView-win32-x64` folder path
-5. Click **Build → Compile**
-6. The installer will be in `Output\AeroView_Setup_1.0.0.exe`
-
-### What the installer does:
-- ✅ Installs AeroView to `Program Files\AeroView`
-- ✅ Creates Start Menu shortcut
-- ✅ Optional Desktop shortcut
-- ✅ Registers **23 file associations** (images + video)
-- ✅ Adds **"Open with AeroView"** to right-click context menu in Explorer
-- ✅ Notifies Windows of association changes (icons refresh immediately)
-- ✅ Supports **Italian, English, Spanish, French, German** installer UI
-- ✅ Includes proper **uninstaller** that cleans all registry entries
-
----
-
 ## 💡 Design Inspiration
 
 AeroView was built as a love letter to the **Windows Vista / 7 Aero** design language:
